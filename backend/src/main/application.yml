@@ -1,0 +1,43 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gym-slot-manager-backend
+
+  datasource:
+    url: jdbc:postgresql://db.<YOUR_PROJECT_REF>.supabase.co:5432/postgres
+    username: postgres
+    password: ${SUPABASE_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none     # Supabase already manages schema
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+# =========================
+# Supabase configuration
+# =========================
+supabase:
+  url: VITE_SUPABASE_URL
+  anon-key: VITE_SUPABASE_PUBLISHABLE_KEY
+  jwt:
+    issuer: VITE_SUPABASE_URL/auth/v1
+    jwks-url: VITE_SUPABASE_URL/auth/v1/.well-known/jwks.json
+
+# =========================
+# Logging
+# =========================
+logging:
+  level:
+    root: INFO
+    org.springframework.security: INFO
+    org.hibernate.SQL: DEBUG
