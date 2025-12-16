@@ -59,7 +59,7 @@ export default function Footer() {
               Monish M- RA231103000138
             </p>
             <p className="text-sm text-muted-foreground">
-              Pravin S - RA231103000138
+              Pravin S - RA231103000144
             </p>
             <p className="text-sm text-muted-foreground">
               Rahul Ramesh - RA231103000153
