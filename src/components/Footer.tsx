@@ -56,13 +56,13 @@ export default function Footer() {
               Sanjay A- RA2311008020159
             </p>
             <p className="text-sm text-muted-foreground">
-              Monish M- RA231103000138
+              Monish M- RA2311030020138
             </p>
             <p className="text-sm text-muted-foreground">
-              Pravin S - RA231103000144
+              Pravin S - RA2311030020144
             </p>
             <p className="text-sm text-muted-foreground">
-              Rahul Ramesh - RA231103000153
+              Rahul Ramesh - RA2311030020153
             </p>
             <p className="text-sm text-muted-foreground">
               Built with passion by the PowerZone team using modern web technologies. The Students of SRM Ramapuram.
